@@ -259,24 +259,11 @@
        <attribute name="title">
         <string>Supprimer</string>
        </attribute>
-       <widget class="QLabel" name="label_6">
-        <property name="geometry">
-         <rect>
-          <x>50</x>
-          <y>50</y>
-          <width>111</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>nom du produit</string>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_7">
         <property name="geometry">
          <rect>
-          <x>50</x>
-          <y>120</y>
+          <x>40</x>
+          <y>60</y>
           <width>111</width>
           <height>16</height>
          </rect>
@@ -285,21 +272,11 @@
          <string>identifiant</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_6">
-        <property name="geometry">
-         <rect>
-          <x>220</x>
-          <y>50</y>
-          <width>113</width>
-          <height>22</height>
-         </rect>
-        </property>
-       </widget>
        <widget class="QLineEdit" name="lineEdit_7">
         <property name="geometry">
          <rect>
-          <x>220</x>
-          <y>120</y>
+          <x>200</x>
+          <y>60</y>
           <width>113</width>
           <height>22</height>
          </rect>
@@ -308,8 +285,8 @@
        <widget class="QPushButton" name="pushButton_4">
         <property name="geometry">
          <rect>
-          <x>380</x>
-          <y>70</y>
+          <x>240</x>
+          <y>150</y>
           <width>93</width>
           <height>28</height>
          </rect>
