@@ -43,7 +43,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -75,7 +75,7 @@
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;identifiant&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit">
+       <widget class="QLineEdit" name="le_nomProduit">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -85,7 +85,7 @@
          </rect>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_2">
+       <widget class="QLineEdit" name="le_id">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -95,10 +95,10 @@
          </rect>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="pb_ajouter">
         <property name="geometry">
          <rect>
-          <x>390</x>
+          <x>380</x>
           <y>230</y>
           <width>93</width>
           <height>28</height>
@@ -121,7 +121,7 @@
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;nombre de produit&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_8">
+       <widget class="QLineEdit" name="le_nbrProduit">
         <property name="geometry">
          <rect>
           <x>230</x>
