@@ -1,6 +1,9 @@
 #ifndef PRODUITS_H
 #define PRODUITS_H
 #include <QString>
+#include <QSqlQueryModel>
+#include <QSqlDatabase>
+#include <QSqlQuery>
 
 class Produits
 {
@@ -13,7 +16,9 @@ public:
     void setid(int);
     void setnomProduit(QString);
     void setnbrProduit(int);
-
+    bool ajouter();
+    QSqlQueryModel* afficher();
+    bool supprimer(int);
 private:
     int id, nbrProduit;
     QString nomProduit;
