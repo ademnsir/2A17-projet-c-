@@ -19,6 +19,7 @@ public:
     bool ajouter();
     QSqlQueryModel* afficher();
     bool supprimer(int);
+    bool modifier(int,QString,int);
 private:
     int id, nbrProduit;
     QString nomProduit;

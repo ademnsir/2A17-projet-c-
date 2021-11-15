@@ -3,6 +3,8 @@
 #include <QSqlQueryModel>
 #include <QSqlDatabase>
 #include <QSqlQuery>
+#include <QMessageBox>
+#include <QIntValidator>
 
 class RAVITAILLEMENT
 {
@@ -10,17 +12,16 @@ public:
     RAVITAILLEMENT();
     RAVITAILLEMENT(int,int,double);
     int getidRavitaillement();
-    int getnbrproduits();
+    int getnbrproduitsR();
     double getdepense();
     void setidRavitaillement(int);
-    void setnbrProduits(int);
+    void setnbrProduitsR(int);
     void setdepense(double);
     bool ajouterR();
-    QSqlQueryModel* afficherR();
-    bool supprimerR(int);
+
 private:
         int idRavitaillement;
-        int nbrProduits;
+        int nbrproduitR;
         double depense;
 };
 

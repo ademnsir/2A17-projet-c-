@@ -1,9 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "produits.h"
-#include <QMessageBox>
-#include <QIntValidator>
-#include <QSqlQuery>
+#include "ravitaillement.h"
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -12,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->lineEditID->setValidator(new QIntValidator(0,999999,this));
+    ui->lineEditNBR->setValidator(new QIntValidator(0,99999,this));
     ui->tabProduits->setModel(P.afficher());
 }
 
@@ -27,29 +26,32 @@ void MainWindow::on_pb_ajouter_clicked()
     int nbrProduit= ui->lineEditNBR->text().toInt();
     QMessageBox msgBox;
 
-    Produits P(id,nomProduit,nbrProduit);
+    Produits P(id , nomProduit , nbrProduit);
     bool test=P.ajouter();
     if (test)
-    {msgBox.setText("ajout avec succes");
+    {msgBox.setText("ajout avec succés");
         ui->tabProduits->setModel((P.afficher()));
     }
     else
-        msgBox.setText("echec d'ajout");
+        msgBox.setText("échec d'ajout");
     msgBox.exec();
 
 }
 
 void MainWindow::on_pb_supprimer_clicked()
 {
-    Produits P;P.setid(ui->lineEditID->text().toInt());
+    Produits P;
+    P.setid(ui->lineEditID->text().toInt());
+
     bool test=P.supprimer(P.getid());
+
     QMessageBox msgBox;
     if (test)
-    {msgBox.setText("supprission avec succes");
+    {msgBox.setText("supprission avec succés");
         ui->tabProduits->setModel(P.afficher());
     }
     else
-        msgBox.setText("echec de supprission");
+        msgBox.setText("échec de supprission");
     msgBox.exec();
 
 }
@@ -58,7 +60,9 @@ void MainWindow::on_pb_supprimer_clicked()
 
 void MainWindow::on_pb_afficher_clicked()
 {
+    Produits P;
     ui->tabProduits->setModel(P.afficher());
+
 }
 
 void MainWindow::on_tabProduits_activated(const QModelIndex &index)
@@ -69,7 +73,37 @@ void MainWindow::on_tabProduits_activated(const QModelIndex &index)
     if (query.exec())
     {while (query.next())
         {
-            ui->lineEditID->setText(query.value(0).toInt());
+            ui->lineEditID->setText(query.value(0).toString());
+            ui->lineEditNOM->setText(query.value(2).toString());
+            ui->lineEditNBR->setText(query.value(1).toString());
+
 
         }
 }}
+void MainWindow::on_pb_modifier_clicked()
+{
+    int id = ui->lineEditID->text().toInt();
+    int nbrProduit = ui->lineEditNBR ->text().toInt();
+    QString nomProduit = ui->lineEditNOM->text() ;
+    QMessageBox msgbox;
+    Produits P(id,nomProduit,nbrProduit);
+    bool test=P.modifier(id,nomProduit,nbrProduit);
+    if(test)
+        {
+            msgbox.setText("Modification avec succés");
+            ui->tabProduits->setModel(P.afficher());
+        }
+        else
+            msgbox.setText("Echec de modification");
+            msgbox.exec();
+    }
+
+
+
+
+
+
+
+
+
+
