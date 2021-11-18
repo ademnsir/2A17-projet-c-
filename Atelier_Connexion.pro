@@ -28,14 +28,12 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     connection.cpp \
-    produits.cpp \
-    ravitaillement.cpp
+    produits.cpp
 
 HEADERS += \
         mainwindow.h \
     connection.h \
-    produits.h \
-    ravitaillement.h
+    produits.h
 
 FORMS += \
         mainwindow.ui

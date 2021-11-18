@@ -1,17 +1,21 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "produits.h"
-#include "ravitaillement.h"
-
+#include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    QPixmap pix("C:/Users/LENOVO/Desktop/Atelier_Connexion/Menu.png");
+    ui->labelPIC->setPixmap(pix.scaledToHeight(745,Qt::FastTransformation));
+
+
     ui->lineEditID->setValidator(new QIntValidator(0,999999,this));
-    ui->lineEditNBR->setValidator(new QIntValidator(0,99999,this));
+    ui->lineEditNBR->setValidator(new QIntValidator(0,9999,this));
     ui->tabProduits->setModel(P.afficher());
+
 }
 
 MainWindow::~MainWindow()
@@ -24,9 +28,10 @@ void MainWindow::on_pb_ajouter_clicked()
     int id=ui->lineEditID->text().toInt();
     QString nomProduit=ui->lineEditNOM->text();
     int nbrProduit= ui->lineEditNBR->text().toInt();
+    int depense = 0;
     QMessageBox msgBox;
 
-    Produits P(id , nomProduit , nbrProduit);
+    Produits P(id , nomProduit , nbrProduit , depense);
     bool test=P.ajouter();
     if (test)
     {msgBox.setText("ajout avec succés");
@@ -85,8 +90,9 @@ void MainWindow::on_pb_modifier_clicked()
     int id = ui->lineEditID->text().toInt();
     int nbrProduit = ui->lineEditNBR ->text().toInt();
     QString nomProduit = ui->lineEditNOM->text() ;
+    int depense=0;
     QMessageBox msgbox;
-    Produits P(id,nomProduit,nbrProduit);
+    Produits P(id,nomProduit,nbrProduit,depense);
     bool test=P.modifier(id,nomProduit,nbrProduit);
     if(test)
         {
@@ -98,12 +104,52 @@ void MainWindow::on_pb_modifier_clicked()
             msgbox.exec();
     }
 
+void MainWindow::on_pb_ajoutR_2_clicked()
+{
+
+    int nbrProduit= ui->lineEditNBR->text().toInt();
+    int depense=ui->lineEdit_DEPENSE->text().toInt();
+    int id=ui->lineEditID->text().toInt();
+    QString nomProduit;
+
+    QMessageBox msgBox;
+
+    Produits P(id,nomProduit,nbrProduit,depense);
+    bool test=P.achat();
+    if (test)
+    {msgBox.setText("achat avec succés");
+        ui->tabProduits->setModel((P.afficher()));
+    }
+    else
+        msgBox.setText("échec d'achat");
+    msgBox.exec();
 
 
+}
 
 
+void MainWindow::on_pb_vendre_clicked()
+{
+    int id = ui->lineEditID->text().toInt();
+    int nbrProduit = ui->lineEditNBR ->text().toInt();
+    QString nomProduit = ui->lineEditNOM->text() ;
+    int depense = 0;
+    QMessageBox msgbox;
+    Produits P(id,nomProduit,nbrProduit,depense);
+    bool test=P.vendre(id,nomProduit,nbrProduit);
+    if(test)
+        {
+            msgbox.setText("vente avec succés");
+            ui->tabProduits->setModel(P.afficher());
+        }
+        else
+            msgbox.setText("Echec de vente");
+            msgbox.exec();
+}
 
 
-
-
+void MainWindow::on_recherche_textChanged(const QString &arg1)
+{
+    ui->tabProduits->setModel(P.recherche(arg1));
+}
 

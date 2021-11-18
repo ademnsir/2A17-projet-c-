@@ -10,19 +10,20 @@ class RAVITAILLEMENT
 {
 public:
     RAVITAILLEMENT();
-    RAVITAILLEMENT(int,int,double);
+    RAVITAILLEMENT(int,int,int);
     int getidRavitaillement();
     int getnbrproduitsR();
-    double getdepense();
+    int getdepense();
     void setidRavitaillement(int);
     void setnbrProduitsR(int);
-    void setdepense(double);
+    void setdepense(int);
     bool ajouterR();
+    QSqlQueryModel* afficherR();
 
 private:
-        int idRavitaillement;
+        int idR;
         int nbrproduitR;
-        double depense;
+        ;
 };
 
 #endif // RAVITAILLEMENT_H
