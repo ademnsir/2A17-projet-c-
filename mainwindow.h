@@ -48,12 +48,13 @@ private slots:
 
 
     // This function gets called when the socket tells us it's connected.
-    void connected();
 
 
     void on_pushButton_11_clicked();
 
     void on_pushButton_12_clicked();
+
+    void on_pushButton_13_clicked();
 
 private:
     Ui::MainWindow *ui;
