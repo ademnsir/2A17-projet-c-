@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>windowvisite</class>
+ <widget class="QDialog" name="windowvisite">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>975</width>
+    <height>671</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>961</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>gestion de visite</string>
+    </attribute>
+    <widget class="QTabWidget" name="tabWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>931</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>3</number>
+     </property>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>ajouter une visite</string>
+      </attribute>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>50</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>id:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>110</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>date:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>180</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>nombre de visiteur:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>230</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>prix:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="id_ajout">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>40</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="date_ajout">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>100</y>
+         <width>110</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="nb_ajout">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>170</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="prix_ajout">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>230</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="ajouter">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>310</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ajouter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>901</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.338235, y1:0.006, x2:1, y2:1, stop:0.205882 rgba(141, 100, 200, 255), stop:1 rgba(112, 165, 255, 255));
+background-color: qconicalgradient(cx:0.618, cy:0.829682, angle:75.2, stop:0 rgba(74, 94, 234, 255), stop:0.779412 rgba(124, 89, 220, 255));
+border-color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:reflect, x1:0.859, y1:0.402591, x2:0.083, y2:0.142, stop:0.205882 rgba(129, 79, 200, 255), stop:0.877451 rgba(40, 104, 255, 255));
+background-color: qlineargradient(spread:reflect, x1:0.609, y1:0.17, x2:0.083, y2:0.142, stop:0.205882 rgba(129, 79, 200, 255), stop:0.877451 rgba(40, 104, 255, 255));
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>label_11</zorder>
+      <zorder>label_4</zorder>
+      <zorder>label_2</zorder>
+      <zorder>label_3</zorder>
+      <zorder>label_8</zorder>
+      <zorder>id_ajout</zorder>
+      <zorder>date_ajout</zorder>
+      <zorder>nb_ajout</zorder>
+      <zorder>prix_ajout</zorder>
+      <zorder>ajouter</zorder>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>supprimer une visite</string>
+      </attribute>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>80</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>id:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="id_supp">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>80</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="supprimer">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>220</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>supprimer</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>891</width>
+         <height>491</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.338235, y1:0.006, x2:1, y2:1, stop:0.205882 rgba(141, 100, 200, 255), stop:1 rgba(112, 165, 255, 255));
+background-color: qconicalgradient(cx:0.618, cy:0.829682, angle:75.2, stop:0 rgba(74, 94, 234, 255), stop:0.779412 rgba(124, 89, 220, 255));
+border-color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:reflect, x1:0.859, y1:0.402591, x2:0.083, y2:0.142, stop:0.205882 rgba(129, 79, 200, 255), stop:0.877451 rgba(40, 104, 255, 255));
+background-color: qlineargradient(spread:reflect, x1:0.609, y1:0.17, x2:0.083, y2:0.142, stop:0.205882 rgba(129, 79, 200, 255), stop:0.877451 rgba(40, 104, 255, 255));
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>label_13</zorder>
+      <zorder>label</zorder>
+      <zorder>id_supp</zorder>
+      <zorder>supprimer</zorder>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>modifier une visite</string>
+      </attribute>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>30</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>id:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="id_modifier">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>30</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="date_modifier">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>110</y>
+         <width>110</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>110</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>date:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>190</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>nombre de visiteur:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="nb_modifier">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>190</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>270</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>prix:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="prix_modifier">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>260</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="modifier">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>350</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>modifier</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>891</width>
+         <height>491</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.338235, y1:0.006, x2:1, y2:1, stop:0.205882 rgba(141, 100, 200, 255), stop:1 rgba(112, 165, 255, 255));
+background-color: qconicalgradient(cx:0.618, cy:0.829682, angle:75.2, stop:0 rgba(74, 94, 234, 255), stop:0.779412 rgba(124, 89, 220, 255));
+border-color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:reflect, x1:0.859, y1:0.402591, x2:0.083, y2:0.142, stop:0.205882 rgba(129, 79, 200, 255), stop:0.877451 rgba(40, 104, 255, 255));
+background-color: qlineargradient(spread:reflect, x1:0.609, y1:0.17, x2:0.083, y2:0.142, stop:0.205882 rgba(129, 79, 200, 255), stop:0.877451 rgba(40, 104, 255, 255));
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>label_14</zorder>
+      <zorder>label_5</zorder>
+      <zorder>id_modifier</zorder>
+      <zorder>date_modifier</zorder>
+      <zorder>label_6</zorder>
+      <zorder>label_7</zorder>
+      <zorder>nb_modifier</zorder>
+      <zorder>label_9</zorder>
+      <zorder>prix_modifier</zorder>
+      <zorder>modifier</zorder>
+     </widget>
+     <widget class="QWidget" name="tab_6">
+      <attribute name="title">
+       <string>afficher une visite</string>
+      </attribute>
+      <widget class="QLineEdit" name="text">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>350</y>
+         <width>211</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QTableView" name="tab_visite">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>90</y>
+         <width>571</width>
+         <height>271</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>380</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>tri ascendant :</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="tri_nb">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>370</y>
+         <width>131</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>nombre de visiteurs</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>410</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>tri descendant:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="tri_nb_2">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>410</y>
+         <width>131</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>nombre de visite</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="rechercher">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>450</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>rechercher</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>460</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>id:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="id_rechercher">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>460</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="affichage">
+       <property name="geometry">
+        <rect>
+         <x>830</x>
+         <y>40</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>afficher</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>911</width>
+         <height>491</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.338235, y1:0.006, x2:1, y2:1, stop:0.205882 rgba(141, 100, 200, 255), stop:1 rgba(112, 165, 255, 255));
+background-color: qconicalgradient(cx:0.618, cy:0.829682, angle:75.2, stop:0 rgba(74, 94, 234, 255), stop:0.779412 rgba(124, 89, 220, 255));
+border-color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:reflect, x1:0.859, y1:0.402591, x2:0.083, y2:0.142, stop:0.205882 rgba(129, 79, 200, 255), stop:0.877451 rgba(40, 104, 255, 255));
+background-color: qlineargradient(spread:reflect, x1:0.609, y1:0.17, x2:0.083, y2:0.142, stop:0.205882 rgba(129, 79, 200, 255), stop:0.877451 rgba(40, 104, 255, 255));
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>label_15</zorder>
+      <zorder>text</zorder>
+      <zorder>tab_visite</zorder>
+      <zorder>label_10</zorder>
+      <zorder>tri_nb</zorder>
+      <zorder>label_28</zorder>
+      <zorder>tri_nb_2</zorder>
+      <zorder>rechercher</zorder>
+      <zorder>label_12</zorder>
+      <zorder>id_rechercher</zorder>
+      <zorder>affichage</zorder>
+     </widget>
+     <widget class="QWidget" name="tab_10">
+      <attribute name="title">
+       <string>stat</string>
+      </attribute>
+      <widget class="QCustomPlot" name="stat" native="true">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>39</y>
+         <width>871</width>
+         <height>401</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
