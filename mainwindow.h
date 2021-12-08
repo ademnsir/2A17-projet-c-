@@ -24,7 +24,7 @@ private slots:
 
     void on_menuBouton_Gestion_produits_clicked();
 
-    void on_menuBouton_Gestion_produits_2_clicked();
+ 
 
     void on_menuBouton_Gestion_visites_2_clicked();
 
