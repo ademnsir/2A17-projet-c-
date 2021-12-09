@@ -23,21 +23,28 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QPushButton{
-    color:white;
-	font: 75 10pt &quot;Source Code Pro&quot;;
-	font: 87 8pt &quot;Nexa Rust Sans Black 01&quot;;
-    background-color: rgb(51, 50, 50);
-background:  rgb(51, 50, 50);
-border-radius:10px;
+    <string notr="true">
+QPushButton
+{
+border-radius: 9px 100px / 120px;
+
+	background-color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+border-radius: 16px;
 }
 QPushButton:hover
 {
-color:white;
 
-background:#b20837;
-border-radius:10px;
-}</string>
+border-left:10px solid rgb(198, 42, 209);
+color:rgb(0, 0, 0);
+}
+QPushButton:pressed
+{
+font: 10pt &quot; MS Shell Dlg 2&quot;;
+					
+}
+
+</string>
    </property>
    <property name="text">
     <string>Fermer</string>

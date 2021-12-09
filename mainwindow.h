@@ -3,7 +3,7 @@
 #include"arduino.h"
 #include <QMainWindow>
 #include "finance_p.h"
-
+//tesst
 namespace Ui {
 class MainWindow;
 }

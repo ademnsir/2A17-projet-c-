@@ -1,6 +1,6 @@
 #ifndef FINANCE_P_H
 #define FINANCE_P_H
-
+//created by Rached
 #include "finance.h"
 #include <QWidget>
 #include "stati1.h"

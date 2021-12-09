@@ -13,8 +13,8 @@ int main(int argc, char *argv[])
     Connection c;
      bool test=c.createconnect();
 
-    login w;
-
+    //login w;
+    MainWindow w;
 
     QMessageBox msgBox;
 

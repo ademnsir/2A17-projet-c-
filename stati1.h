@@ -6,7 +6,9 @@
 #include<QDate>
 #include<QDebug>
 using namespace std;
-
+/////////////////
+///test
+///
 namespace Ui {
 class stati1;
 }

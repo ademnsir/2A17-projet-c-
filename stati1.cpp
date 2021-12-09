@@ -1,5 +1,7 @@
 #include "stati1.h"
 #include "ui_stati1.h"
+/////////////////////////////////////////////////
+/// test
 #include<iostream>
 stati1::stati1(QWidget *parent) :
     QDialog(parent),
