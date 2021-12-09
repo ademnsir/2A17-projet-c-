@@ -42,96 +42,6 @@ background-color: transparent;</string>
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="menuBouton_Gestionpersonnels_2">
-    <property name="geometry">
-     <rect>
-      <x>670</x>
-      <y>190</y>
-      <width>281</width>
-      <height>391</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <italic>true</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QPushButton
-{
-border-radius: 9px 100px / 120px;
-
-
-	background-color: qconicalgradient(cx:0, cy:1, angle:151.5, stop:0.161765 rgba(85, 0, 127, 255), stop:1 rgba(55, 168, 255, 255));
-border-color: rgb(170, 0, 127);
-border-radius: 20px;
-}
-QPushButton:hover
-{
-
-border-left:10px solid rgb(198, 42, 209);
-color:rgb(0, 0, 0);
-}
-QPushButton:pressed
-{
-font: 10pt &quot; MS Shell Dlg 2&quot;;
-					
-}
-
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>24</width>
-      <height>24</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>750</x>
-      <y>470</y>
-      <width>137</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>parcanimalier17@gmail.com</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_7">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>370</y>
-      <width>171</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <weight>75</weight>
-      <italic>true</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);
-</string>
-    </property>
-    <property name="text">
-     <string>Contactez-nous!</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="menuBouton_Gestionpersonnels">
     <property name="geometry">
      <rect>
@@ -185,58 +95,6 @@ font: 10pt &quot; MS Shell Dlg 2&quot;;
       <width>30</width>
       <height>40</height>
      </size>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>740</x>
-      <y>420</y>
-      <width>101</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>+216 27 213 682</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_8">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>40</y>
-      <width>491</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>18</pointsize>
-      <weight>75</weight>
-      <italic>true</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>SOURCE  NATURELLE D'AVENTURES</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>520</y>
-      <width>221</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Z.I Chotrana II - B.P. 160 Pôle Technologique
-2083 Cite El Ghazala Raoued
-Ariana, Tunisie</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -372,58 +230,6 @@ background-color: transparent;</string>
      <size>
       <width>40</width>
       <height>40</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="menuBouton_Gestionpersonnels_3">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>0</y>
-      <width>691</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>18</pointsize>
-      <weight>75</weight>
-      <italic>true</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QPushButton
-{
-border-radius: 9px 100px / 120px;
-
-	
-background-color: qconicalgradient(cx:0, cy:1, angle:151.5, stop:0.161765 rgba(85, 0, 127, 255), stop:1 rgba(55, 168, 255, 255));
-border-color: rgb(255, 255, 255);
-border-radius: 16px;
-}
-QPushButton:hover
-{
-
-border-left:10px solid rgb(198, 42, 209);
-color:rgb(0, 0, 0);
-}
-QPushButton:pressed
-{
-font: 10pt &quot; MS Shell Dlg 2&quot;;
-					
-}
-
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>24</width>
-      <height>24</height>
      </size>
     </property>
    </widget>
@@ -650,26 +456,298 @@ font: 10pt &quot; MS Shell Dlg 2&quot;;
      </size>
     </property>
    </widget>
+   <widget class="QPushButton" name="menuBouton_Gestion_financiere">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton
+{
+border-radius: 9px 100px / 120px;
+
+	background-color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+border-radius: 16px;
+}
+QPushButton:hover
+{
+
+border-left:10px solid rgb(198, 42, 209);
+color:rgb(0, 0, 0);
+}
+QPushButton:pressed
+{
+font: 10pt &quot; MS Shell Dlg 2&quot;;
+					
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Gestion Financiere</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Documents/maquetteQT/shop-icon.png</normaloff>../../Documents/maquetteQT/shop-icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>27</width>
+      <height>27</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>249</x>
+      <y>-1</y>
+      <width>721</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="page_3"/>
+       <widget class="QWidget" name="page_4">
+        <widget class="QPushButton" name="menuBouton_Gestionpersonnels_2">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>200</y>
+           <width>281</width>
+           <height>391</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QPushButton
+{
+border-radius: 9px 100px / 120px;
+
+
+	background-color: qconicalgradient(cx:0, cy:1, angle:151.5, stop:0.161765 rgba(85, 0, 127, 255), stop:1 rgba(55, 168, 255, 255));
+border-color: rgb(170, 0, 127);
+border-radius: 20px;
+}
+QPushButton:hover
+{
+
+border-left:10px solid rgb(198, 42, 209);
+color:rgb(0, 0, 0);
+}
+QPushButton:pressed
+{
+font: 10pt &quot; MS Shell Dlg 2&quot;;
+					
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>250</y>
+           <width>171</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+</string>
+         </property>
+         <property name="text">
+          <string>Contactez-nous!</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="menuBouton_Gestionpersonnels_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>10</y>
+           <width>691</width>
+           <height>101</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+           <weight>75</weight>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QPushButton
+{
+border-radius: 9px 100px / 120px;
+
+	
+background-color: qconicalgradient(cx:0, cy:1, angle:151.5, stop:0.161765 rgba(85, 0, 127, 255), stop:1 rgba(55, 168, 255, 255));
+border-color: rgb(255, 255, 255);
+border-radius: 16px;
+}
+QPushButton:hover
+{
+
+border-left:10px solid rgb(198, 42, 209);
+color:rgb(0, 0, 0);
+}
+QPushButton:pressed
+{
+font: 10pt &quot; MS Shell Dlg 2&quot;;
+					
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>440</x>
+           <y>500</y>
+           <width>221</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Z.I Chotrana II - B.P. 160 Pôle Technologique
+2083 Cite El Ghazala Raoued
+Ariana, Tunisie</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>50</y>
+           <width>491</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+           <weight>75</weight>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>SOURCE  NATURELLE D'AVENTURES</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>350</y>
+           <width>137</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>parcanimalier17@gmail.com</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>440</x>
+           <y>300</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>+216 27 213 682</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
    <zorder>label_3</zorder>
    <zorder>label</zorder>
-   <zorder>menuBouton_Gestionpersonnels_2</zorder>
-   <zorder>label_5</zorder>
-   <zorder>label_7</zorder>
    <zorder>menuBouton_Gestionpersonnels</zorder>
-   <zorder>label_6</zorder>
-   <zorder>label_4</zorder>
    <zorder>pushButton_2</zorder>
    <zorder>pushButton_4</zorder>
    <zorder>pushButton</zorder>
    <zorder>label_2</zorder>
    <zorder>pushButton_3</zorder>
-   <zorder>menuBouton_Gestionpersonnels_3</zorder>
    <zorder>menuBouton_Gestion_produits</zorder>
    <zorder>pushButton_5</zorder>
-   <zorder>label_8</zorder>
    <zorder>pushButton_6</zorder>
    <zorder>menuBouton_Gestion_visites_2</zorder>
    <zorder>menuBouton_Gestion_reclamations_3</zorder>
+   <zorder>menuBouton_Gestion_financiere</zorder>
+   <zorder>frame</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -677,7 +755,7 @@ font: 10pt &quot; MS Shell Dlg 2&quot;;
      <x>0</x>
      <y>0</y>
      <width>975</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

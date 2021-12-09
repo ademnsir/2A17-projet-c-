@@ -21,6 +21,8 @@ SOURCES += \
     arduino.cpp \
     conge.cpp \
     connectioncpp.cpp \
+    finance.cpp \
+    finance_p.cpp \
     main.cpp \
     login.cpp \
     mainwindow.cpp \
@@ -28,6 +30,7 @@ SOURCES += \
     produits.cpp \
     qcustomplot.cpp \
     reclamation.cpp \
+    stati1.cpp \
     visite.cpp \
     windowcommidites.cpp \
     windowpersonnel.cpp \
@@ -38,12 +41,15 @@ HEADERS += \
     arduino.h \
     conge.h \
     connectioncpp.h \
+    finance.h \
+    finance_p.h \
     login.h \
     mainwindow.h \
     personnel.h \
     produits.h \
     qcustomplot.h \
     reclamation.h \
+    stati1.h \
     visite.h \
     windowcommidites.h \
     windowpersonnel.h \
@@ -51,8 +57,10 @@ HEADERS += \
     windowvisite.h
 
 FORMS += \
+    finance_p.ui \
     login.ui \
     mainwindow.ui \
+    stati1.ui \
     windowcommidites.ui \
     windowpersonnel.ui \
     windowreclamation.ui \

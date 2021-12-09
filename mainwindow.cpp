@@ -11,11 +11,13 @@
 #include "ui_windowvisite.h"
 #include "windowreclamation.h"
 #include "ui_windowreclamation.h"
+#include "finance_p.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->stackedWidget->insertWidget(1,&f);
     switch(a.connect_arduino())
     {
         case (0):
@@ -98,3 +100,9 @@ void MainWindow::on_menuBouton_Gestion_reclamations_3_clicked()
 
        rr.exec();
 }
+
+void MainWindow::on_menuBouton_Gestion_financiere_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
