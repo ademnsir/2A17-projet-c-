@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
 
     login w;
 
-
     QMessageBox msgBox;
 
     if(test)

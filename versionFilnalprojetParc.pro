@@ -19,15 +19,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     arduino.cpp \
+    arduino1.cpp \
     conge.cpp \
     connectioncpp.cpp \
+    finance.cpp \
+    finance_p.cpp \
     main.cpp \
     login.cpp \
     mainwindow.cpp \
+    mainwindow1.cpp \
     personnel.cpp \
+    produit.cpp \
     produits.cpp \
     qcustomplot.cpp \
     reclamation.cpp \
+    smtp.cpp \
+    stati1.cpp \
     visite.cpp \
     windowcommidites.cpp \
     windowpersonnel.cpp \
@@ -36,14 +43,21 @@ SOURCES += \
 
 HEADERS += \
     arduino.h \
+    arduino1.h \
     conge.h \
     connectioncpp.h \
+    finance.h \
+    finance_p.h \
     login.h \
     mainwindow.h \
+    mainwindow1.h \
     personnel.h \
+    produit.h \
     produits.h \
     qcustomplot.h \
     reclamation.h \
+    smtp.h \
+    stati1.h \
     visite.h \
     windowcommidites.h \
     windowpersonnel.h \
@@ -51,8 +65,11 @@ HEADERS += \
     windowvisite.h
 
 FORMS += \
+    finance_p.ui \
     login.ui \
     mainwindow.ui \
+    mainwindow1.ui \
+    stati1.ui \
     windowcommidites.ui \
     windowpersonnel.ui \
     windowreclamation.ui \
@@ -62,3 +79,11 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+SUBDIRS += \
+    projetcpp.pro
+
+DISTFILES += \
+    projetcpp.pro.user \
+    projetcpp.pro.user.991943f \
+    projetcpp.pro.user.e7dc2f4
